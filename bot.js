@@ -38,7 +38,7 @@ function messageHandler(msg) {
 	.setAuthor(msg.author.tag, msg.author.displayAvatarURL())
 	.setImage(emote)
 	.setColor('#0c71e0')
-	.setTimestamp()
+	.setTimestamp();
 	msg.channel.send(newEmbed);
 	msg.delete();
 	
@@ -52,6 +52,6 @@ function escapeRegExp(str) {
 function evaluate(input) {
 	let result = eval(input);
 	if (result)
-		result = result.toString().replace(new RegExp(escapeRegExp(token), 'g'), '<token removed>');
+		result = result.toString().replace(new RegExp(escapeRegExp(process.env.botToken), 'g'), '<token removed>');
 	return result;
 }
