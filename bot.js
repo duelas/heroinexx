@@ -12,7 +12,6 @@ client.on('message' , messageHandler);
 
 function readyDiscord(){
 	console.log('bot ready');
-	console.log(client.emojis.cache);
 }
 
 function messageHandler(msg) {
