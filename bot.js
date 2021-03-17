@@ -21,7 +21,7 @@ function messageHandler(msg) {
 	
 	var emote;
 	
-	var content = evaluate(msg.content);
+	var content = evaluate(msg.content).toString();
 	
 	if ( content === 'pardun') {
 		emote = 'https://i.imgur.com/4jmjaG3.jpg?1';		
