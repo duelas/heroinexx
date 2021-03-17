@@ -24,12 +24,12 @@ function messageHandler(msg) {
 	
 	var content = msg.cleanContent;
 	
-	emotes.forEach(e => {commandChk(e,content);});
+	emotes.forEach(e => {commandChk(e,content,msg);});
 	
 }
 
 
-function commandChk(e,content){
+function commandChk(e,content,msg){
 	
 	if (!(content === e.name)) return;	
 	
