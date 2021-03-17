@@ -21,12 +21,11 @@ function readyDiscord(){
 
 function messageHandler(msg) {
 	
-	if(msg.content
 	if(msg.author.bot) return;
 	
 	var emote;
 	
-	let content = msg.cleanContent;
+	var content = msg.cleanContent;
 	
 	if ( content === 'PARDUN') {	
 	const newEmbed = new Discord.MessageEmbed()
