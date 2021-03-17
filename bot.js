@@ -37,7 +37,8 @@ function messageHandler(msg) {
 	.setColor('#0c71e0')
 	.setTimestamp();
 	msg.channel.send(newEmbed);
-	console.log('Emote sent by ${msg.author.tag}');
+	let sender = msg.author.tag;
+	console.log('Emote sent by ${sender}');
 	msg.delete();
 	
 }
