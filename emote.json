@@ -34,6 +34,12 @@
 		"name" : "sui" ,
 		"string" : false ,
 		"value" : "https://i.imgur.com/oI6Q10N.png?1"	
+	}	
+	,
+	{
+		"name" : "WATAME" ,
+		"string" : false ,
+		"value" : "https://i.imgur.com/O4QT2MU.jpg"	
 	}
 
 
