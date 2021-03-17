@@ -21,12 +21,14 @@ function readyDiscord(){
 
 function messageHandler(msg) {
 	
-	
+	if(msg.content
 	if(msg.author.bot) return;
 	
 	var emote;
 	
-	if ( msg.content === 'PARDUN') {	
+	let content = msg.cleanContent;
+	
+	if ( content === 'PARDUN') {	
 	const newEmbed = new Discord.MessageEmbed()
 	.setAuthor(msg.author.tag, msg.author.displayAvatarURL())
 	.setDescription(ascii_pardun)
@@ -37,11 +39,11 @@ function messageHandler(msg) {
 	msg.delete();
 	return;		
 	
-	} else if ( msg.content === 'pardun') {
+	} else if ( content === 'pardun') {
 		emote = pardun;		
-	} else if ( msg.content === 'wataoji') {
+	} else if ( content === 'wataoji') {
 		emote = wataoji;		
-	} else if ( msg.content === 'yabe') {
+	} else if ( content === 'yabe') {
 		emote = yabe;		
 	} else {
 		return;
