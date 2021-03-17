@@ -39,7 +39,13 @@
 	{
 		"name" : "WATAME" ,
 		"string" : false ,
-		"value" : "https://i.imgur.com/O4QT2MU.jpg"	
+		"value" : "https://i.imgur.com/O4QT2MU.jpg?1"	
+	}
+	,
+	{
+		"name" : "weirdA" ,
+		"string" : false ,
+		"value" : "https://i.imgur.com/oAAQ797.jpg?1"	
 	}
 
 
