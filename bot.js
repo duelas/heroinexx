@@ -21,13 +21,11 @@ function messageHandler(msg) {
 	
 	var emote;
 	
-	var content = evaluate(msg.content.toString());
-	
-	if ( content === 'pardun') {
+	if ( msg.content === 'pardun') {
 		emote = 'https://i.imgur.com/4jmjaG3.jpg?1';		
-	} else if ( content === 'wataoji') {
+	} else if ( msg.content === 'wataoji') {
 		emote = 'https://i.imgur.com/iyCobGd.png?1';		
-	} else if ( content === 'yabe') {
+	} else if ( msg.content === 'yabe') {
 		emote = 'https://i.imgur.com/8EzZX5L.gif';		
 	} else {
 		return;
@@ -42,16 +40,4 @@ function messageHandler(msg) {
 	msg.channel.send(newEmbed);
 	msg.delete();
 	
-}
-
-
-function escapeRegExp(str) {
-	return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, '\\$1');
-}
-
-function evaluate(input) {
-	let result = eval(input);
-	if (result)
-		result = result.toString().replace(new RegExp(escapeRegExp(process.env.botToken), 'g'), '<token removed>');
-	return result;
 }
